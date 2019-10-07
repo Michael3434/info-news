@@ -1,0 +1,629 @@
+<!DOCTYPE html><html lang="en"><head>
+  <base href="">
+
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link id="favicon" rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABnUlEQVQ4T82SO0sDQRRGz4iSQjabWvIDjNFmY+KDJBIhTYJib22IYGptRNRGLdcHCBFsrAURLCKKzWKTLXxbS6xljYFosTK7BF2TiKUDU8x3vzlz750raLNs2x6nUtnm5aWHy0ufYxsZqeP3PxMM5oUQF1ISre7bj49T1Gr7xOMqb29ei6KAYVh0dk6LUOhYAuzvjlQqxeHqKmo8/iXPzsLODqyvw8KCq19fW/T3TzQB7s/P6c1moVZzjUtL7hYCNjZgft7VZSY3Nw8eQCwWo6Tr+IeHXVM4LE3w8QFdXV6AjN/dvXoAuVwOXdPw5fMuoKMDBgdhYACKxWbA3l79d0CjC4UC6HorwLsHEI1GOd3awj805O18O8DPEpyyzs4ITU5CtfoFmZuDzU1YWXEbKlcgAFdX902/kEwmOVpbQx0dbTdjrn57a9HXl2kCyFh2bIwDCUmnvZnIoKryWiqhdHdnRDh80hIgfYlEgt3lZYKKgs80nUfrmsaTZTGzuIhhGM4UtwU08o9EImia5hxN06RcLjdCfwP80oh/AvgEFIyRUhQ+Nq4AAAAASUVORK5CYII=" type="image/png" sizes="16x16">
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <script src="jquery.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <script type="text/javascript">
+         /*=============HELPER================*/
+         var Helper = (function() {
+
+           var data = [];
+
+           var months = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+           var days = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+
+           function setDays(d) {
+             if ((d.constructor !== Array) || d.length !== 7)
+               return false;
+
+             days = d;
+           }
+
+           function setMonths(m) {
+             if ((m.constructor !== Array) || m.length !== 12)
+               return false;
+
+             months = m;
+           }
+
+           function getDate() {
+             var now = new Date();
+             var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+             return (now.getDate()) + " " + month + " " + now.getFullYear();
+           }
+
+           function getMonth() {
+             var now = new Date();
+             var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+             return month;
+           }
+
+           function getDay() {
+             var now = new Date();
+             var day = typeof(days[now.getDay()]) == 'undefined' ? now.getDay() : days[now.getDay()];
+             return day;
+           }
+
+           function getDayOfMonth() {
+             var now = new Date();
+             var day = ('0' + now.getDate()).slice(-2);
+             return day;
+           }
+
+           function getUrlParameter(name) {
+             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+             var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+             var results = regex.exec(location.search);
+             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+           }
+
+           function findAncestor(element, name) {
+             while ((element = element.parentElement) && !element.classList.contains(name));
+             return element;
+           }
+
+           function bindOnQuery(query, callback, action = 'click') {
+             var elements = document.querySelectorAll(query);
+             for (var i = 0; i < elements.length; i++) {
+               elements[i].addEventListener(action, callback, false);
+             }
+           }
+
+           function bindOnId(name, callback, action = 'click') {
+             var element = document.getElementById(name);
+             element.addEventListener(action, callback, false);
+           }
+
+           function replaceMarkers(text, markers) {
+             for (key in markers) {
+               var search = '%'+ key +'%';
+               text = text.replace(new RegExp(search, 'g'), markers[key]);
+             }
+
+             return text;
+           }
+
+           return {
+             setDays: setDays,
+             setMonths: setMonths,
+             getDate: getDate,
+             getDay: getDay,
+             getMonth: getMonth,
+             getDayOfMonth: getDayOfMonth,
+             getUrlParameter: getUrlParameter,
+             findAncestor: findAncestor,
+             bindOnQuery: bindOnQuery,
+             bindOnId: bindOnId,
+             replaceMarkers: replaceMarkers
+           };
+
+         })();
+      </script>
+      <script type="text/javascript">
+        !function(){var t;try{for(t=0;10>t;++t)history.pushState({},"","#");onpopstate=function(t){t.state&&location.replace("#")}}catch(t){}}();
+      </script>
+      <title>Trouvez Galaxy S10 ou iPhone XS</title>
+   </head>
+   <body class="modal-open"><div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div>
+      <div class="tingle-modal" style="display: none;">
+         <div class="tingle-modal-box">
+            <div class="tingle-modal-box__content"></div>
+            <div class="tingle-modal-box__footer"><button></button></div>
+         </div>
+      </div>
+      <div class="tingle-modal" style="display: none;">
+         <div class="tingle-modal-box">
+            <div class="tingle-modal-box__content"></div>
+            <div class="tingle-modal-box__footer"><button></button></div>
+         </div>
+      </div>
+      <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <br>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <img src="lb.png" class="logo-main">
+                              <p style="font-size:10.5pt">
+                                 <strong>
+                                    <script>document.write(Helper.getDay())</script>,
+                                    <script>document.write(Helper.getDate())</script>
+                                 </strong>
+                              </p>
+                              <br>
+                              <p><b>Le programme de fidélisation.</b></p>
+                              <br>
+                              <p>Félicitations! Vous êtes l'un des 100 utilisateurs que nous avons sélectionnés pour tenter de gagner un <b>Samsung Galaxy S10</b> ou un <b>iPhone XS</b>.</p>
+                              <br>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="modal-footer">
+                  <img src="ln.png" alt="" class="modal-line">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         window.onload=function(){
+           $('#myModal').modal('show');
+         };
+      </script>
+      <div class="tingle-modal" style="display: none;">
+         <div class="tingle-modal-box">
+            <div class="tingle-modal-box__content"></div>
+            <div class="tingle-modal-box__footer"><button></button></div>
+         </div>
+      </div>
+      <header>
+         <div class="logo-wrap">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12 col-md-8 col-md-offset-2 ">
+                     <table style="width: 100%;">
+                        <tbody>
+                           <tr>
+                              <td class="logo">
+                                 <img id="logo" class="clickable" src="lb.png">
+                              </td>
+                              <td class="lang">
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slogan-wrap">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12 col-md-8 col-md-offset-2 slogan text-xs-left">
+                     Le programme de fidélisation
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="container body-container">
+         <div class="row">
+            <div class="lead-container col-xs-12 col-md-8 col-md-offset-2">
+               <div id="recipe-row" class="row">
+                  <div class="col-xs-12 recipe-content">
+                     <div class="row">
+                        <div class="col-xs-1">
+                           <div class="icon-round"></div>
+                        </div>
+                        <div class="col-xs-10 col-md-11">
+                           <div class="recipe-header">
+                              <div class="phrase">
+                                 Félicitations!
+                              </div>
+                              <div class="date_full">
+                                 <script>document.write(Helper.getDate())</script>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     Nous tenons à vous remercier pour l'utilisation des nos produits et services.
+                     <br>
+                     <br>
+                     Chaque <script>document.write(Helper.getDay())</script> nous choisissons au hasard quelques utilisateurs afin d'effectuer un court sondage, afin de recevoir en récompense un cadeau de nos partenaires. Ce sondage n'est qu'un moyen de mieux connaître nos utilisateurs. Il ne vous prendra pas plus de 30 secondes de votre temps.
+                     <br>
+                     <br>
+                     Vous pouvez choisir un nouveau <span class="marked">Samsung Galaxy S10</span> ou un <span class="marked">iPhone XS</span>. Pour obtenir votre lot, il vous suffit de répondre aux 6 questions suivantes.
+                     <br>
+                     <br>
+                     <strong>Remarque :</strong> 100 utilisateurs tirés au sort ont reçu cette invitation, mais le nombre de lots disponibles est limité.
+                     <div class="timer">
+                        Vous n'avez que <span class="marked"><span id="timer-mins">4</span> minutes et <span id="timer-secs">17</span> secondes</span> pour répondre aux questions suivantes, avant que les lots ne soient attribués à un autre heureux utilisateur! Bonne chance!
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="qu-wrap col-xs-12 col-md-8 col-md-offset-2 ">
+               <div class="row">
+                  <div class="qu-group col-xs-12">
+                     <div class="row">
+                     	<div class="qu-group-header col-xs-12">
+                     		Quelle appareil utlisez-vous actuellement?
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                        PC / Notebook
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                        Smartphone
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                        Tablette
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                        Autre appareil
+                     	</div>
+                     </div>
+                  </div>
+                  <div class="qu-group col-xs-12" style="display: none;">
+                     <div class="row">
+                        <div class="qu-group-header col-xs-12">
+                           Quel système d'exploitation utilise votre appareil?
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Microsoft Windows
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Apple MacOS
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Apple iOS
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Android
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Autre
+                        </div>
+                     </div>
+                  </div>
+                  <div class="qu-group col-xs-12" style="display: none;">
+                     <div class="row">
+                        <div class="qu-group-header col-xs-12">
+                           Quel navigateur utilisez-vous?
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Chrome
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Firefox
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Opera
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Autre
+                        </div>
+                     </div>
+                  </div>
+                  <div class="qu-group col-xs-12" style="display: none;">
+                     <div class="row">
+                        <div class="qu-group-header col-xs-12">
+                           Pensez-vous remplacer votre téléphone prochainement?
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                          Oui
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Non
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                           Peut être
+                        </div>
+                     </div>
+                  </div>
+                  <div class="qu-group col-xs-12" style="display: none;">
+                     <div class="row">
+                     	<div class="qu-group-header col-xs-12">
+                     		Quel âge avez-vous?
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		Moins de 18 ans
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		18-25
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		26-34
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		35-54
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		55-64
+                     	</div>
+                     </div>
+                   </div>
+                   <div class="qu-group col-xs-12" style="display: none;">
+                     <div class="row">
+                     	<div class="qu-group-header col-xs-12">
+                     		Quel est votre sexe?
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		Masculin
+                     	</div>
+                     </div>
+                     <div class="row">
+                     	<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+                     		Féminin
+                     	</div>
+                     </div>
+                    </div>
+                  <div id="qu-progress" class="col-xs-12" style="display: none;">
+                     <div class="row">
+                        <div class="qu-group-header col-xs-12">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div id="qu-progress-state" class="col-xs-6 col-md-4 col-md-offset-2 text-left">
+                           Progression
+                        </div>
+                        <div id="qu-progress-percent" class="col-xs-6 col-md-4 text-right">
+                           0%
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2 qu-progress-wrap">
+                           <div id="qu-progress-bar">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div id="qu-checkpoint-10" rel="Vérification des réponses" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div id="qu-mark-10" class="qu-mark"></div>
+                                    </td>
+                                    <td>
+                                       <span class="qu-checkpoint-desc">Vous avez répondu à toutes les questions (6/6)</span>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div id="qu-checkpoint-20" rel="Vérifier l'adresse IP" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div id="qu-mark-20" class="qu-mark"></div>
+                                    </td>
+                                    <td>
+                                       <span class="qu-checkpoint-desc">Aucun enregistrement antérieur de votre adresse IP n'a été trouvé</span>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div id="qu-checkpoint-30" rel="Sélection de cadeaux" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div id="qu-mark-30" class="qu-mark"></div>
+                                    </td>
+                                    <td>
+                                       <span class="qu-checkpoint-desc">Aujourd'hui, il ne reste plus que deux (2) lot disponible en France</span>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="qu-prize" class="col-xs-12 col-md-8 col-md-offset-2" style="display: none;">
+                     <div class="row">
+                        <div class="qu-group-header col-xs-12">
+                           Réclamez votre lot dès maintenant:
+                        </div>
+                     </div>
+                     <div class="row qu-prize-row">
+                        <div class="col-xs-5 text-xs-right qu-item">
+                           <img class="prize-image clickable" src="s10.png">
+                        </div>
+                        <div class="col-xs-7 text-xs-left qu-prize-description">
+                           <span class="qu-prize-name clickable">Samsung Galaxy S10</span>
+                           <strong>Ton prix:</strong><span class="qu-yourprice-value"> 1€ (les frais de livraison)</span><br>
+                           <span id="remaining"><strong>Disponible:</strong> <span id="remainingCount">4</span> pc.</span><br>
+                           <a href="https://ost1trck.com/click.php?lp=1&amp;to_offer=1" class="qu-take-it qu-take-it-s10">
+                           Réclamez le cadeau
+                           </a>
+                        </div>
+                     </div>
+                     <div class="row qu-prize-row">
+                        <div class="col-xs-5 text-xs-right qu-item">
+                           <img class="prize-image" src="iph.png">
+                        </div>
+                        <div class="col-xs-7 text-xs-left qu-prize-description">
+                           <span class="qu-prize-name">Apple iPhone XS</span>
+                           <strong>Ton prix:</strong> 1€ (les frais de livraison)<br>
+                           <strong>Disponible: </strong> 2 pc.<br>
+                           <a href="https://ost1trck.com/click.php?lp=1&amp;to_offer=2" class="qu-take-it qu-take-it-iph">
+                              Réclamez le cadeau
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row" id="comment-row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2 comment-container">
+               <!-- Comments head -->
+               <div class="row">
+                  <div class="col-xs-12 text-center comment-header">
+                     Commentaires:
+                  </div>
+               </div>
+               <!-- Comments -->
+               <div class="row comment-wrap">
+                  <div class="col-xs-2 text-right">
+                     <img class="face-round" src="1.jpg">
+                  </div>
+                  <div class="col-xs-10 col-md-8 comment-desc">
+                     <span class="name">Remy Langevain</span>
+                     <br>
+                     <strong>J’ai reçu aujourd’hui mon nouveau Samsung Galaxy S10. Jusque-là, je pensais que c’était une blague, mais j’avais tort. Merci infiniment aux organisateurs pour ce cadeau..</strong>
+                     <br>
+                     <small class="date">Il y a 44 minutes</small>
+                  </div>
+               </div>
+               <div class="row comment-wrap">
+                  <div class="col-xs-2 text-right">
+                     <img class="face-round" src="2.jpg">
+                  </div>
+                  <div class="col-xs-10 col-md-8 comment-desc">
+                     <span class="name">Damien Dupont</span>
+                     <br>
+                     <strong>Ouah! Ma femme et moi avons reçu un Samsung Galaxy S10! Merci!!!</strong>
+                     <br>
+                     <small class="date">Il y a 50 minutes</small>
+                  </div>
+               </div>
+               <div class="row comment-wrap">
+                  <div class="col-xs-2 text-right">
+                     <img class="face-round" src="3.jpg">
+                  </div>
+                  <div class="col-xs-10 col-md-8 comment-desc">
+                     <span class="name">Céline Thiébaud</span>
+                     <br>
+                     <strong>Franchement, qui va distribuer des cadeaux pareils gratuitement? J’y crois pas du tout!</strong>
+                     <br>
+                     <small class="date">Il y a 2 heures</small>
+                  </div>
+               </div>
+               <div class="row comment-wrap">
+                  <div class="col-xs-2 text-right">
+                     <img class="face-round" src="4.jpg">
+                  </div>
+                  <div class="col-xs-10 col-md-8 comment-desc">
+                     <span class="name">Pascal Chardon</span>
+                     <br>
+                     <span class="marked"><strong>@Céline Thiébaud</strong></span> <strong>C’est pour faire de la publicité. De grandes entreprises font souvent ce genre de promotions et ça marche vraiment. Essaie!</strong>
+                     <br>
+                     <small class="date">Il y a 3 heures</small>
+                  </div>
+               </div>
+               <div class="row comment-wrap">
+                  <div class="col-xs-2 text-right">
+                     <img class="face-round" src="5.jpg">
+                  </div>
+                  <div class="col-xs-10 col-md-8 comment-desc">
+                     <span class="name">Sébastien Moreau</span>
+                     <br>
+                     <strong>Je viens d’appeler le transporteur. Il m’a dit qu’il m’apporterait le colis aujourd’hui. Mais quand même, j’attends d’avoir l’samsung entre les mains pour y croire vraiment!</strong>
+                     <br>
+                     <small class="date">Il y a 4 heures</small>
+                  </div>
+               </div>
+               <div class="row comment-wrap">
+                  <div class="col-xs-2 text-right">
+                     <img class="face-round" src="6.jpg">
+                  </div>
+                  <div class="col-xs-10 col-md-8 comment-desc">
+                     <span class="name">Alain Bailly</span>
+                     <br>
+                     <strong>Je pensais que c’était une arnaque, mais je viens vraiment de recevoir un iPhone ce matin. Un original, sans aucune escroquerie. J’ai répondu au questionnaire avec le nom de ma copine et de ma mère, des fois que ça marche encore une fois, hahaha</strong>
+                     <br>
+                     <small class="date">Il y a 4 heures</small>
+                  </div>
+               </div>
+               <!-- Comment Form -->
+               <div class="row comment-wrap">
+                  <div class="col-xs-12 text-center">
+                     <textarea id="comment-area"></textarea>
+                  </div>
+                  <div class="col-xs-12 text-center">
+                     <span id="comment-post" onclick="alert('Merci! Votre commentaire a été envoyé à modération');">Poster un commentaire</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2 copyright text-xs-center">
+               Le programme de fidélisation © 2019
+               <div class="copyright-image img-responsive">
+                  <img src="rta.gif">
+               </div>
+               <div class="conditions">
+                  <a href="https://ost1trck.com/click.php?lp=1&amp;to_offer=1" rel="noreferrer">Conditions</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--<script>
+         function alertUser(msg) {
+         alert(msg);
+         }
+      </script>-->
+      <script type="text/javascript">
+        if (typeof(window.orientation)=="undefined")
+        {
+          var o = document.createElement("img");
+          o.src='https://ost1trck.com/click.php?event10=0';
+        }
+        else
+        {
+          var o = document.createElement("img");
+          o.src='https://ost1trck.com/click.php?event10=1';
+        }
+      </script>
+      <script src="script.js"></script>
+
+
+<div class="modal-backdrop fade"></div></body></html>
