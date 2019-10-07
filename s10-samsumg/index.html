@@ -1,0 +1,453 @@
+<!DOCTYPE html><html><head>
+  <base href="">
+
+
+
+<script>
+var tk = decodeURIComponent(window.location.search.match(/(\?|&)tm\=([^&]*)/)[2]).replace(/(\+|%20)/g, ' ');
+if (tk == 'token'){
+var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+	var newURL = newURL.replace("&tm=token", "");
+		window.history.pushState&&window.history.replaceState(null,"",newURL);
+		}
+</script>
+	<meta charset="utf-8">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<meta name="robots" content="noindex">
+	<meta name="robots" content="nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="cache-control" content="public">
+	<link rel="icon" type="image/png" src="a9.png">
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" href="facebook.css">
+	<link rel="stylesheet" href="cssbluegol.css">
+	<script>
+var
+  months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
+	days = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],
+
+	// EDIT TIME HERE IF YOU WISH TO UPDATE TIME OF THE COMMENTS, PLEASE BE CAREFULL TO LEAVE EXACT SAME STRUCTURE (EDIT BETWEEN "")
+	time = ["17h36", "23h30", "03h36", "20h36", "12h36", "15h23", "17h36", "1h36"],
+	d = new Date(),
+	dateNow = d.getDate()+" "+months[d.getMonth()]+" "+d.getFullYear();
+
+	if (window.location.search.match(/(\?|&)c1\=([^&]*)/) !== null){
+		var c1 = decodeURIComponent(window.location.search.match(/(\?|&)c1\=([^&]*)/)[2]).replace(/(\+|%20)/g, ' ');
+		document.title = "Questionnaire";
+	}
+</script>
+	<script>
+function socle(){
+document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
+
+}
+</script>
+<link rel="stylesheet" href="amznewg.css">
+<style>
+#giftgahog {
+display:none;}
+#origahog {
+display:block;}
+#message-page img {
+float:right;
+padding: 20px;
+width: auto;
+border-radius: 0px;}
+#message-page .message {
+float:left;padding-left: 20px;
+width:80%;}
+@media only screen and (max-width: 1023px){
+#giftgahog {
+display:block;
+text-align:center;}
+#origahog {
+display:none;}
+#message-page img {
+display:block;
+float:none;
+padding:0px;}
+#message-page .message {
+text-align:center;
+float:none; padding:0px;
+width:100%;}
+}
+</style>
+<title>Questionnaire</title></head>
+<body>
+	<header>
+		<img src="sam.png" alt="img" style="width:180px; margin:0 auto;"><br> <span style="font-size: 15px;font-weight: bold;line-height: 27px;"><script>document.write(dateNow)</script>20 septembre 2019</span> <img src="frflag.png" alt="img" style="width:20px;display: inline-block;vertical-align: middle;margin-top: -5px;">
+
+	</header>
+	<div class="container">
+		<div class="content">
+
+<div id="message-page">
+		<div class="modal-content" id="modal-content">
+			<div id="origahog">
+			<img alt="image" class="circle" src="a9.png">
+			<span class="message">
+			<br>
+			Félicitations ! Vous avez été choisi pour recevoir une récompense spéciale ! Vous n'avez qu'à répondre à quelques questions rapides sur votre expérience récente avec les produits Samsung et à choisir une récompense exclusive à la fin du sondage !
+			<span><br><br>
+			Cette offre passionnante est valable uniquement aujourd'hui : <script>document.write(dateNow)</script>20 septembre 2019<br><br>
+			</span>
+
+			</span>
+			</div>
+
+			<div id="giftgahog">
+			<img alt="image" src="a9.png" style="width:50px; height:50px;">
+			<span class="message">
+			<br>
+			Félicitations ! Vous avez été choisi pour recevoir une récompense spéciale ! Vous n'avez qu'à répondre à quelques questions rapides sur votre expérience récente avec les produits Samsung et à choisir une récompense exclusive à la fin du sondage !
+			<span><br><br>
+			Cette offre passionnante est valable uniquement aujourd'hui : <script>document.write(dateNow)</script>20 septembre 2019<br><br>
+			</span>
+
+			</span>
+			</div>
+
+			<div class="modal-footer">
+			<button class="continue">C’est parti</button>
+			</div>
+		</div>
+		<div class="choices" style="display: none;">
+				<div class="question">
+					<span id="q">
+						Question 1 sur 7: <br><b>Possédez-vous des produits Samsung ?</b>
+					</span>
+				</div>
+
+				<!-- First Question answers -->
+				<p id="answers-1">
+					<input type="radio" name="answer" onclick="nextQuestion(2)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(2)">Oui</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(2)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(2)">Non</span>
+				</p>
+
+				<!-- Second Question answers -->
+				<p id="answers-2" class="hidden">
+					<input type="radio" name="answer" onclick="nextQuestion(3)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(3)">Ordinateur de bureau</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(3)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(3)">Ordinateur portable</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(3)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(3)">Smartphone</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(3)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(3)">Aucune de ces réponses</span>
+				</p>
+
+				<!-- Third Question answers -->
+				<p id="answers-3" class="hidden">
+					<input type="radio" name="answer" onclick="nextQuestion(4)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(4)">Réseaux sociaux</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(4)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(4)">Musique</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(4)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(4)">Jeux</span>
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(4)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(4)">E-mail</span>
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(4)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(4)">Aucune de ces réponses</span>
+				</p>
+
+				<!-- Fourth Question answers -->
+				<p id="answers-4" class="hidden">
+					<input type="radio" name="answer" onclick="nextQuestion(5)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(5)">Oui</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(5)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(5)">Non</span>
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(5)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(5)">Je ne suis pas sûr</span>
+				</p>
+<!-- Fifth Question answers -->
+				<p id="answers-5" class="hidden">
+					<input type="radio" name="answer" onclick="nextQuestion(6)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(6)">Oui</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(6)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(6)">Non merci</span>
+
+					<br>
+
+					<input type="radio" name="answer" onclick="nextQuestion(6)" value="1">
+					<span class="cursor answerOption" onclick="nextQuestion(6)">Je ne suis pas sûr</span>
+				</p>
+				<p id="answers-6" class="hidden">
+				<input type="radio" name="answer" onclick="nextQuestion(7)" value="1"> <span class="cursor answerOption" onclick="nextQuestion(7)">Oui</span><br>
+				<input type="radio" name="answer" onclick="nextQuestion(7)" value="1"> <span class="cursor answerOption" onclick="nextQuestion(7)">Non</span>
+
+			</p>
+			<p id="answers-7" class="hidden">
+				<input type="radio" name="answer" onclick="nextQuestion(8),socle()" value="1"> <span id="MyBtnshow"><span class="cursor answerOption" onclick="nextQuestion(8),socle()">Oui</span></span><br>
+				<input type="radio" name="answer" onclick="nextQuestion(8),socle()" value="1"> <span class="cursor answerOption" onclick="nextQuestion(8),socle()">Non</span>
+
+			</p>
+
+			</div> <!-- /.choices -->
+		</div>
+
+			<div class="validate wrapper hidden">
+				<div class="wrapper">
+					<br>
+					<table width="100%" style="line-height:23px;">
+						<tbody>
+							<tr>
+								<td align="left">
+									<p id="v1b" style="font-size:16px;">Soumission des réponses...</p>
+									<p id="v2b" style="font-size:16px;">Vérification de la base de données pour les adresses IP en double...</p>
+									<p id="v3b" style="font-size:16px;">Vérification de notre inventaire pour les cadeaux disponibles pour vous...</p>
+									<p id="vfinal" style="font-size:16px;">Félicitations !</p>
+								</td>
+								<td align="right"><span id="szazalek">0%</span></td>
+							</tr>
+						</tbody>
+					</table>
+					<div style="width: 100%; margin: 0px auto; margin: 10px 0;">
+						<div id="szlider">
+							<div id="szliderbar">
+							</div>
+							<div id="szazalek">
+							</div>
+						</div>
+					</div>
+					<table style="line-height:23px; font-size:16px;">
+						<tbody>
+							<tr>
+								<td width="40px"><img id="v1a" src="loading.gif"><img id="v1c" src="fb-check.jpg" class="hidden"></td>
+								<td><p id="v1d">Soumission des réponses</p></td>
+							</tr>
+							<tr>
+								<td><img id="v2a" src="loading.gif"><img id="v2c" src="fb-check.jpg" class="hidden"></td>
+								<td><p id="v2d">Vérification de la base de données pour les adresses IP en double.</p></td>
+							</tr>
+							<tr>
+								<td><img id="v3a" src="loading.gif"><img id="v3c" src="fb-check.jpg" class="hidden"></td>
+								<td><p id="v3d">Vérification de notre inventaire pour les cadeaux disponibles pour vous</p></td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+				</div>
+			</div>
+			<!-- ALL PRODUCTS ARE LISTED HERE -->
+			<div class="reward-page hidden">
+				                <div class="reward clicable-reward">
+					<div class="image-wrapper">
+						<div class="image">
+							<img src="phone.jpg" alt="reward"><br>
+							<img class="rating" src="5.png">
+							<span class="rating-text"> (989)</span>
+						</div>
+					</div>
+					<div class="right-wrapper">
+						<div class="description">
+							<b>Samsung Galaxy S10 256GB ©</b><br>
+							<del style="color: red;font-size: 14px;">€1079</del> <strong><font color="#3CBC3C" style="font-weight: bold;font-size: 22px;"><br>Ne payez que les frais d'expédition 1-2€</font></strong><br>
+							Quantité disponible : <font color="#000">(1)</font><br>
+						</div>
+						<a target="_blank" class="flux_cta" href="https://cd-down.com/?a=93404&c=201791"><button><img src="cart.png" style="width: 23px;display: inline-block;"> CLIQUEZ ICI</button></a>
+					</div>
+				</div>
+
+				<div class="reward zero">
+					<div class="image-wrapper">
+						<div class="image">
+							<img src="watches.jpg" alt="reward"><br>
+							<img class="rating" src="4.png"><span class="rating-text"> (589)</span>
+						</div>
+					</div>
+					<div class="right-wrapper">
+						<div class="description">
+							<b>Samsung Galaxy Watch ©</b><br>
+							<del style="color: red;font-size: 14px;">€328.99</del> <strong><font color="#3CBC3C" style="font-weight: bold;font-size: 22px;">€3</font></strong><br>
+							<font color="red">**EN RUPTURE DE STOCK**</font>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="reward zero">
+					<div class="image-wrapper">
+						<div class="image">
+							<img src="notebook.jpg" alt="reward"><br>
+							<img class="rating" src="5.png"><span class="rating-text"> (894)</span>
+						</div>
+					</div>
+					<div class="right-wrapper">
+						<div class="description">
+							<b>Galaxy Tab S4 10.5" 64Go ©</b><br>
+							<del style="color: red;font-size: 14px;">€729</del> <strong><font color="#3CBC3C" style="font-weight: bold;font-size: 22px;">€3</font></strong><br>
+							<font color="red">**EN RUPTURE DE STOCK**</font>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="reward zero">
+					<div class="image-wrapper">
+						<div class="image">
+							<img src="tablet.jpg" alt="reward"><br>
+							<img class="rating" src="5.png"><span class="rating-text"> (546)</span>
+						</div>
+					</div>
+					<div class="right-wrapper">
+						<div class="description">
+							<b>Galaxy Tab A 10.5" 32Go ©</b><br>
+							<del style="color: red;font-size: 14px;">€399,90</del> <strong><font color="#3CBC3C" style="font-weight: bold;font-size: 22px;">€3</font></strong><br>
+							<font color="red">**EN RUPTURE DE STOCK**</font>
+						</div>
+					</div>
+				</div>			</div>
+			<div class="comment-page">
+				<!-- ALL COMMENTS ARE LISTE HERE -->
+				<div class="comment">
+					<!-- EDIT SRC ATTRIBUTE WITH EXACT PATH AND IMAGE NAME TO REPLACE IT -->
+					<img alt="image" class="comment-img" src="f1.jpg">
+					<div class="desc">
+						<!-- EDIT COMMENTER NAME HERE (EDIT CONTENT BETWEEN <B><B/> TAGS) -->
+						<span><b>François Dupuis</b></span>
+
+						<!-- EDIT COMMENT HERE (EDIT CONTENT BETWEEN <P></P> TAGS) -->
+						<p>Je ne suis généralement pas vraiment « fan » de ce genre d'enquête, mais je me suis dit que j'allais essayé celle-ci. Je dois dire que c'était vraiment rapide et facile ! Mon Galaxy S10 est arrivé à la poste aujourd'hui !!<br>
+							<img src="com_s9.jpg" style="max-width:200px;">
+						</p>
+						<div class="bottom-desc">
+							<!--<img src="images/like.png">
+							<span style="color:#365899;">263</span>-->
+							<!-- DO NOT EDIT HERE - DATE WILL BE APPENDED FROM JAVASCRIPT-->
+							<p class="gray-text comment__date f1-date">20 septembre 2019 à 17h36</p>
+						</div>
+					</div> <!-- DIT RULES EXPLAINED ON FIRST PRODUCT APPLIES TO ALL FOLLOWING COMMENTS -->
+				</div>
+				<div class="comment">
+					<img alt="image" class="comment-img" src="f.jpg">
+					<div class="desc">
+						<span><b>Julie Marchesseault</b></span>
+						<p>Je croyais que c'était une blague au début, mais mon galaxy s10 est entré dans mon courrier ce matin</p>
+						<div class="bottom-desc">
+							<!--<img src="images/like.png">
+							<span style="color:#365899;">374</span>-->
+							<p class="gray-text comment__date f2-date">19 septembre 2019 à 23h30</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="comment">
+					<img alt="image" class="comment-img" src="f3.jpg">
+					<div class="desc">
+						<span><b>Caroline Guerrin</b></span>
+						<p>C'était facile, j'espère avoir un galaxy...</p>
+						<div class="bottom-desc">
+							<!--<img src="images/like.png">
+							<span style="color:#365899;">145</span>-->
+							<p class="gray-text comment__date f3-date">17 septembre 2019 à 03h36</p>
+						</div>
+					</div>
+				</div>
+				<div class="comment">
+					<img alt="image" class="comment-img" src="f6.jpg">
+					<div class="desc">
+						<span><b>Roger Jeunet</b></span>
+						<p>Hier, il y avait une livraison ! J'ai donné le galaxy à ma belle épouse à l'occasion de son anniversaire... Je t'aime ma chérie)
+							<br><img src="com_s9b.jpg" style="max-width:200px;">
+						</p>
+						<div class="bottom-desc">
+							<!--<img src="images/like.png">
+							<span style="color:#365899;">317</span>-->
+							<p class="gray-text comment__date f4-date">17 septembre 2019 à 20h36</p>
+						</div>
+					</div>
+				</div>
+				<div class="comment">
+					<img alt="image" class="comment-img" src="f5.jpg">
+					<div class="desc">
+						<span><b>Thomas Merrillon</b></span>
+						<p>J'ai vu cette offre unique et je l'ai cliqué parce qu'au début, je pensais que c'était faux. J'ai revu l'annonce et parce que je m'ennuyais alors j'ai décidé de l'essayer... Et j'ai eu un NOUVEAU samsung galaxy s10 ! Comment !!?!</p>
+						<div class="bottom-desc">
+							<p class="gray-text comment__date f5-date">15 septembre 2019 à 12h36</p>
+						</div>
+					</div>
+				</div>
+
+				<!--
+				<div class="comment">
+					<img alt="image" class="comment-img" src="images/f6.jpg">
+					<div class="desc">
+						<span><b>Roger Jeunet</b></span>
+						<p>Voilà, donc un peu comme les autres ici, je suis assez choqué par les récompenses qui nous sont données quand vous atteignez la fin de ce sondage vraiment court. Je suppose que je m'attendais plutôt à gagner une moitié de sandwich ou du fil dentaire utilisé, haha. Et bien j'avais tort. Vous m'avez à peine posé quelques questions et vous m'avez laissé choisir un kit de e-cigarette ? On dirait que je suis celui qui sort gagnant de cette affaire. Merci d'avoir fait en sorte que ce soit si rapide et facile !</p>
+						<div class="bottom-desc">
+							<p class="gray-text comment__date f6-date"></p>
+						</div>
+					</div>
+				</div>
+				<div class="comment">
+					<img alt="image" class="comment-img" src="images/f7.jpg">
+					<div class="desc">
+						<span><b>Élise Trouillot</b></span>
+						<p>Généralement , je ne participe pas aux sondages clients. Mais une chose de sûre, je suis contente d'avoir fait celui-là. L'enquête se fait tout seul, elle ne m'a pris qu'une minute et la valeur de la récompense était bien au-dessus de ce que la plupart des autres sites offrent. Merci ! </p>
+						<div class="bottom-desc">
+							<p class="gray-text comment__date f7-date"></p>
+						</div>
+					</div>
+				</div>
+				<div class="comment">
+					<img alt="image" class="comment-img" src="images/f8.jpg">
+					<div class="desc">
+						<span><b>Caroline Guerrin</b></span>
+						<p>Je n'avait plus fait de QCM depuis le collège, alors quand j'ai vu le sondage, j'ai eu quelques flashbacks de quand j'étais à l'école. Heureusement, ce n'était que cinq questions faciles. J'ai aussi été vraiment impressionnée par les récompenses ! Quand j'ai vu d'autres sondages sur des sites de commerce sur internet, ils offrent généralement des babioles. Là ce sont de vrais produits.</p>
+						<div class="bottom-desc">
+							<p class="gray-text comment__date f8-date"></p>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+			<footer class="site-footer">
+				<img src="cc.png" alt="logo">
+				<p class="copyright">Copyright © 2019</p>
+				<div class="claim">
+					CECI EST UN SONDAGE INDÉPENDANT. Ce site Web n'est pas affilié ou soutenu par et ne prétend pas représenter ou posséder aucune des marques commerciales, noms commerciaux ou droits associés à l'un des produits qui sont la propriété de leurs propriétaires respectifs qui ne possèdent pas, ne soutiennent pas ni ne font la promotion de ce site Internet. *Les produits d'essai proposés sur la dernière page exigent des frais d'expédition et de manutention. Voir le site du fabricant pour plus de détails car les termes varient en fonction des offres. Voir les termes et conditions importants concernant ce sondage, ce site et cette publicité. Important : Des frais de livraison peuvent s'appliquer.
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<script>
+		function nextQuestion(a){var b=document.getElementById("q"),c=document.getElementById("answers-1"),d=document.getElementById("answers-2"),e=document.getElementById("answers-3"),f=document.getElementById("answers-4"),g=document.getElementById("answers-5"),gnextg=document.getElementById("answers-6"),gnextg1=document.getElementById("answers-7"),h=document.getElementById("message-page");document.getElementsByClassName("loading"),new Date;switch(a){case 2:b.innerHTML="Question 2 sur 7: <br><b>Lequel des appareils suivants utilisez-vous le plus souvent pendant la journée ?</b>",c.style.display="none",d.style.display="block";break;case 3:b.innerHTML="Question 3 sur 7: <br><b>Quels types d'applications utilisez-vous le plus souvent ?</b>",d.style.display="none",e.style.display="block";break;case 4:b.innerHTML="Question 4 sur 7: <br><b>Recommanderiez-vous les produits Samsung à vos amis ?</b>",e.style.display="none",f.style.display="block";break;case 5:b.innerHTML="Question 5 sur 7: <br><b>Aimeriez-vous recevoir gratuitement un smartphone Samsung Galaxy S10 neuf ?</b>",f.style.display="none",g.style.display="block";break;case 6:b.innerHTML="Question 6 sur 7: <br> <b>Avez-vous déjà participé à notre programme de récompenses en répondant à des sondages ?</b>",g.style.display="none",gnextg.style.display="block";break;case 7:b.innerHTML="Question 7 sur 7: <br> <b>Souhaitez-vous recevoir des notifications concernant des offres exclusives et des réductions ?</b>",gnextg.style.display="none",gnextg1.style.display="block";break;case 8:document.getElementsByClassName("question")[0].style.display="none",document.getElementsByClassName("choices")[0].style.display="none",document.getElementsByClassName("comment-page")[0].style.display="none",document.getElementsByClassName("site-footer")[0].style.display="none",h.className+=" load",h.innerHTML="<center>Veuillez patienter pendant que nous traitons vos réponses...</center>";var o=document.querySelector(".validate");o.className="validate",document.querySelector("#v1a").style.display="block",document.querySelector("#v1b").style.display="block",document.querySelector("#v2b").style.display="none",document.querySelector("#v3b").style.display="none",document.querySelector("#vfinal").style.display="none",drawszlider(10,0),setTimeout(function(){document.querySelector("#v1a").style.display="none",document.querySelector("#v1b").style.display="none",document.querySelector("#v1c").style.display="block",document.querySelector("#v1d").style.display="block",document.querySelector("#v2a").style.display="block",document.querySelector("#v2b").style.display="block"},2e3),setTimeout(function(){document.querySelector("#v2a").style.display="none",document.querySelector("#v2b").style.display="none",document.querySelector("#v2c").style.display="block",document.querySelector("#v2d").style.display="block",document.querySelector("#v3a").style.display="block",document.querySelector("#v3b").style.display="block"},4500),setTimeout(function(){document.querySelector("#v3a").style.display="none",document.querySelector("#v3b").style.display="none",document.querySelector("#v3c").style.display="block",document.querySelector("#v3d").style.display="block",document.querySelector("#vfinal").style.display="block"},6500),setTimeout(function(){h.className+=" complete",h.innerHTML="Merci d'avoir répondu au sondage !<p style='color:black;font-size:16px;'>Parce que vous avez contribué à nous fournir des données de consommateur extrêmement précieuses, vous pouvez maintenant choisir parmi les récompenses exclusives ci-dessous.<br/><br/>Veuillez comprendre que ces produits sont actuellement en <b>très forte demande</b> et que si vous quittez cette page sans réclamer votre récompense, nous n'avons pas d'autre choix que de donner à n'importe quel autre visiteur une chance de participer au programme de récompenses de notre sondage.",document.getElementsByClassName("reward-page")[0].style.display="block",document.getElementsByClassName("comment-page")[0].style.display="block",document.getElementsByClassName("site-footer")[0].style.display="block",o.className="hidden"},7e3)}}function drawszlider(a,b){var c=Math.round(100*b/a);document.getElementById("szliderbar").style.width=c+"%",document.getElementById("szazalek").innerHTML=c+"%",holvanszlider=b,t=setTimeout("drawszlider(100, slidewhere);slidewhere = holvanszlider + 1; if (slidewhere > 100) {slidewhere = 100;}",62)}function selectReward(a,b,c){window.open(a)}function showModal(){function c(){document.getElementsByClassName("choices")[0].style.display="none";}var a=document.getElementById("welcome"),b=document.getElementsByClassName("continue")[0];window.addEventListener("DOMContentLoaded",c()),b.onclick=function(){document.getElementsByClassName("modal-content")[0].style.display="none",document.getElementsByClassName("choices")[0].style.display="block"},a.onclick=b.onclick,window.onclick=function(b){b.target==a&&(a.style.display="none")}}document.title="Questionnaire";for(var comments=document.querySelectorAll(".comment"),i=1;i<=comments.length;i++)mydate=new Date,i>=3&&i<=4?3==i?mydate.setDate(mydate.getDate()-i):mydate.setDate(mydate.getDate()-(i-1)):i>4?mydate.setDate(mydate.getDate()-i):mydate.setDate(mydate.getDate()-(i-1)),year=mydate.getYear(),year<1e3&&(year+=1900),day=mydate.getDay(),month=mydate.getMonth(),daym=mydate.getDate(),daym<10&&(daym="0"+daym),document.getElementsByClassName("f"+i+"-date")[0].innerHTML=(daym)+" "+months[month]+" "+year+" à "+time[i-1];var slidewhere=0,holvanszlider=0;showModal();
+	</script>
+
+
+
+</body></html>

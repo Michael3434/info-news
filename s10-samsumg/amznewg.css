@@ -1,0 +1,16 @@
+﻿.modal-content {
+    margin: 0;
+    width: 100%;
+    border: none;
+}
+.modal-header {
+    background-color: #fff;
+    color: #000;
+}
+.choices {
+    border: none;
+    box-shadow: none;
+}
+.modal-footer {
+    background-color: #fff;
+}

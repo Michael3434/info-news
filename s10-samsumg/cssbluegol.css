@@ -1,0 +1,57 @@
+﻿.modal-header span {
+    font-weight: bold;
+}
+.modal-header {
+    padding: 5px;
+}
+.modal-content {
+    padding: 0px;
+    line-height: 24px;
+}
+.modal-footer button {
+    width: 100%;
+    background: #4267b2;
+    border-radius: 22px;
+    padding: 10px 5%;
+    margin: 5px 0;
+	line-height:23px;
+}
+header span {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+}
+#message-page .message {
+    font-size: 18px;
+    line-height: 23px;
+}
+.choices .question {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+	margin-bottom: 5px;
+}
+.choices .answerOption {
+    padding: 10px 5%;
+    border-radius: 22px;
+    line-height: 23px;
+}
+#message-page.complete p {
+line-height:23px;}
+.wrapper {
+line-height:23px;}
+
+.reward-page .reward button {
+    padding: 0 2rem;
+    line-height: 43px;
+height: 43px;
+    border-radius: 3px;
+
+}.reward-page .reward button:hover {
+    line-height: 43px;
+height: 43px;
+
+}
+header {
+    padding: 7px 0;
+}
