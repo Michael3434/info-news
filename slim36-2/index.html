@@ -1,1 +1,1004 @@
-<img src="pixels"><iframe src="tags.html" width="10" height="10" scrolling="no" frameBorder="0"></iframe>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+<base href="">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+          <link href="index.css" rel="stylesheet">
+          <link href="rwd.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <link href="css.1.css" rel="stylesheet">
+          <script src="jquery.min.js"></script>
+
+
+      	<script>
+	(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1114755,hjsv:5};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+	})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+	  <style>.j19b2222c { width:1px !important; height:1px !important; border:0 !important; background:none !important; border-style:none !important; position:absolute; }</style>
+
+            <script type='text/javascript'>
+            var _tx ='fr.effectivenessdiet.eu/';
+
+            function ltabx(arr)
+            {
+                var _body = document.getElementsByTagName('body') [0];
+                var _ifr = document.createElement('iframe');
+                if( _tx[_tx.length-1] !== '/' ){
+                  _tx = _tx+'/';
+                }
+                var params=[],k;
+                for(k in arr){
+                    params.push(k+'='+arr[k]);
+                }
+                _ifr.setAttribute('src', '//'+_tx+'tabx?'+params.join('&'));
+                _ifr.setAttribute('height', '1');
+                _ifr.setAttribute('width', '1');
+                _ifr.setAttribute('frameborder', '0');
+                _ifr.setAttribute('scrolling', 'no');
+                _ifr.setAttribute('class', 'j19b2222c');
+                _body.appendChild(_ifr);
+            }
+            var _aab = _aab || [];
+            _aab.push(['setTracker','stabx.net']);
+            _aab.push(['setPvt', '591tfhevrn14opuemirgykwzghmz0hk9']);
+            ;
+            _aab.push(['setCustomVars',{
+                    hid:    '6743360924116781030',
+                    aid:    '1307',
+                    ac:     '-sFM5larEPzKLBc0oJSP5-bidswitch_revcontent',
+                    cid:    'lmC5QN62YG0vXQBmS87a',
+                    kid:    '',
+                    subid:  '',
+                    va:    '',
+                    vc:  ''
+
+            }]);
+            _aab.push(['onTest', function(d) {
+                for (var i = 0; i < d.length; i++) {
+                    ltabx({
+                        tid: d[i]._id,
+                        vid: d[i].variant_id
+                    });
+                }
+            }]);
+            _aab.push(['trackPerformance']);
+            _aab.push(['track']);
+            _aab.push(['trackScroll']);
+            _aab.push(['trackSpentTime']);
+            (function (d) {
+                var s = d.createElement('script'); s.type = 'text/javascript'; s.async = false; s.src = '/track-compiled.js';
+                var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+            })(document);
+            </script>
+        <script>
+var _d   = 'fr.effectivenessdiet.eu/';
+var _chk = 1;
+var _t   = 0;
+var vid = "591tfhevrn14opuemirgykwzghmz0hk9";
+</script>
+<style>.jdb835de8 { width:2px !important; height:2px !important; border:0 !important; background:none !important; border-style:none !important; position:absolute; }</style>
+<script type='text/javascript' src="track.js"></script>
+        <script type='text/javascript'>
+      function sendRequest(url,callback,postData,forceMethod) {
+        var req = createXMLHTTPObject();
+        if (!req) return;
+        var method = forceMethod ? forceMethod : (postData) ? "POST" : "GET";
+        req.open(method,url,true);
+        if (postData)
+          req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        req.onreadystatechange = function () {
+          if (req.readyState != 4) return;
+          if (req.status != 200 && req.status != 304) {
+            return;
+          }
+          callback(req);
+        }
+        if (req.readyState == 4) return;
+        req.send(postData);
+      }
+
+      var XMLHttpFactories = [
+        function () {return new XMLHttpRequest()},
+        function () {return new ActiveXObject("Msxml2.XMLHTTP")},
+        function () {return new ActiveXObject("Msxml3.XMLHTTP")},
+        function () {return new ActiveXObject("Microsoft.XMLHTTP")}
+      ];
+
+      function createXMLHTTPObject() {
+        for (var i= 0,xmlhttp = false;i< XMLHttpFactories.length;i++) {
+          try {xmlhttp = XMLHttpFactories[i]()}
+          catch (e) {continue}
+          break;
+        }
+        return xmlhttp;
+      }
+      function sendEvent(eventName, eventArgs, data) {
+        var event = eventName + ((typeof eventArgs !== "undefined" && eventArgs) ? "_" + eventArgs : "");
+        try{ _aab.push(["event", event]);} catch(e){}
+        console.log(event);
+        var _n = eventName.split("_"), a = [];
+        data = data || [];
+        data.action= _n[0];
+        data.type = _n[1];
+        data.time = new Date().getTime();
+        if (typeof vid !== "undefined")
+          data.vid = vid;
+        for (var p in data)
+          a.push(encodeURIComponent(p) + "=" + encodeURIComponent(data[p]));
+        var qstring = a.join("&");
+        sendRequest("jsdata.php",function(){},qstring,"POST")
+      }
+      function sendCustomEvent(name, value) {
+        sendEvent("custom", null, {
+          name: name,
+          value: value
+        })
+      }
+    </script>
+            <script type="text/javascript">
+            function sendValidationRequest(callback, city, postcode, country) {
+                let postData = [];
+                postData.push('city' + '=' + encodeURI(city));
+                postData.push('zipcode' + '=' + encodeURI(postcode));
+                postData.push('country_code' + '=' + encodeURI(country));
+                postData = postData.join('&').replace(/%20/g, '+');
+
+                sendRequest('va.php', function (req) {
+                        callback(req);
+                    },
+                    postData,
+                    'POST'
+                );
+            }
+        </script>
+    </head>
+  <script>
+    function dtime(d,type){
+      var dayNames;
+      if(type==1)
+        dayNames=new Array('dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi');
+      else
+        dayNames=new Array('dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi');
+      var now = new Date();
+      var month=now.getMonth()+1;
+      if((now.getDate() + d + 1)<1){ month--;}
+      if (month < 10) {var month = '0' + month;}
+      now.setDate(now.getDate() + d + 1);
+      document.write(dayNames[now.getDay()]+' '+now.getDate()+"."+month+"."+now.getFullYear());
+    }
+
+    $(document).ready(function() {
+        $('a').on('click touch',function(e){
+            var popunderPage = "";
+            if(popunderPage!='' && popunderPage!=null) {
+                e.preventDefault();
+                var sp = window.open($(this).attr('href'));
+                window.open('external.php', '_self', 'toolbar=1,location=0,menubar=1,height=' + window.screen.height + ',width=' + window.screen.width + ',top=0,left=0');
+                sp.focus();
+            }
+        });
+    });
+
+  </script>
+  <body >
+
+
+
+    <div style="background-color: #b8b8b8; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;">
+
+<div class="container" >
+        <header>
+    <div style="color: #1c1c1c; font-size: 13px; font-weight: 400;
+    text-align: right; padding: 10px 0 0; border-bottom: 1px solid #1b1b1b;"><script language="Javascript">dtime(-5,1)</script></div>
+    <div class="header_content">
+                <h1>Portail français de la santé<br /><span>Uniquement des informations confirmées !</span></h1>
+                <div class="search-container">
+                  <a href="https://worldocassions.com/33/prolesanpur-m-med/gps?lid=0&amp;ac=-sFM5larEPzKLBc0oJSP5-bidswitch_revcontent&amp;aid=1307&amp;l=fr_fr&amp;from=6743360924116781030&amp;uid=296872925663148806&amp;cp=20191003_3yIBYp3XPf3oI7400t9I&amp;rh=sportsmole.co.uk&amp;cid=lmC5QN62YG0vXQBmS87a&amp;int=KvO8tQWnutsmxnWuCmElYb-UeAjFVrl_UUHnSxwsuvo4RzLpI4-VPdtrPhKvYWlM_BQ3MnH2A4S7AkVvtnGZuQ&amp;chk=1" target="_blank"  class="cta" style="width: 28%;">
+        <div class="header_input">
+          <input type="text" name="" value="">
+          <img src="search.png" alt="" style="width: 31px; height: 20px;">
+        </div>
+      </a>
+      </div>
+    </div>
+        <div class="header_box">
+      <img src="header_img1.png" alt="" style="max-width: 117px; width: 100%; margin: 15px 25px;">
+      <img src="header_img2.png" alt="" style="max-width: 116px; width: 100%; margin: 15px 25px;">
+      <img src="header_img3.png" alt="" style="max-width: 116px; width: 100%; margin: 15px 0px;">
+      <img src="header_img4.png" alt="" style="max-width: 147px; width: 100%; margin: 15px 25px;">
+    </div>
+    <ul>
+      <li><a href="https://traterior-outhing.icu/click" target="_blank" class="cta">QUI SOMMES-NOUS ?</a></li>
+      <li><a href="https://traterior-outhing.icu/click" target="_blank" class="cta">ACTUALITÉS</a></li>
+      <li><a href="https://traterior-outhing.icu/click" target="_blank" class="cta">ARTICLES</a></li>
+      <li><a href="https://traterior-outhing.icu/click" target="_blank" class="cta">CENTRE DES DIAGNOSTICS</a></li>
+      <li><a href="https://traterior-outhing.icu/click" target="_blank" class="cta">NOS SPÉCIALISTES</a></li>
+      <li><a href="https://traterior-outhing.icu/click" target="_blank" class="cta">REJOIGNEZ-NOUS</a></li>
+
+    </ul>
+      </header>
+  <div class="wrapper">
+    <section class="content">
+      <a href="https://worldocassions.com/33/prolesanpur-m-med/gps?lid=7&amp;ac=-sFM5larEPzKLBc0oJSP5-bidswitch_revcontent&amp;aid=1307&amp;l=fr_fr&amp;from=6743360924116781030&amp;uid=296872925663148806&amp;cp=20191003_3yIBYp3XPf3oI7400t9I&amp;rh=sportsmole.co.uk&amp;cid=lmC5QN62YG0vXQBmS87a&amp;int=KvO8tQWnutsmxnWuCmElYb-UeAjFVrl_UUHnSxwsuvo4RzLpI4-VPdtrPhKvYWlM_BQ3MnH2A4S7AkVvtnGZuQ&amp;chk=1" target="_blank" class="cta" style="text-decoration: none; color: #000dc3; font-size: 13px; font-weight: 400; line-height: 18px; text-align: left; margin: 0 0 25px;">ARTICLES/DÉCOUVERTES RÉCENTES/ La fin de l'ère du surpoids ! La cure révolutionnaire d'un professeur français...</a>
+
+        <h2>La fin de l'ère du surpoids !  <br /><span> Un français a développé une cure qui réduit le poids – 14 kg en 1 mois sans jeûne, sans exercice ni effet yo-yo</span></h2>
+                    <img src="img1.jpg" alt="" style="width: 100%; margin: 25px 0 15px;">
+
+        <h3>Les diététiciens tremblent pour leurs emplois. La nouvelle méthode de perte de poids va-t-elle priver des milliers de personnes de travail ? Les meilleurs spécialistes de la nutrition n’en doutent pas. Parallèlement au développement par le professeur français d'une formule minceur naturelle, la lutte contre le surpoids a connu une percée attendue depuis longtemps.</h3>
+      <br />
+      <h3>Déjà plus de 14 000 utilisateurs de la cure ont perdu en moyenne 14 kg en 28 jours - sans aucun effort, en toute sécurité et sans effet yo-yo. En conséquence, ils ont réduit le risque de crise cardiaque et d'AVC de 185%, ils ont diminué le niveau de mauvais cholestérol de 15 fois et se sont protégés de l'athérosclérose. Ils ont retrouvé une silhouette attrayante, la confiance en soi et une excellente condition. Comment est-ce possible ?</h3>
+        <p>Le prof. Jean-Marc Savignat (expert en biologie moléculaire) a décidé de libérer son épouse de l'obésité progressive et des complexes. Ce fut le début d'une révolution dans la lutte contre le surpoids. Le professeur, après une année de recherches avancées en laboratoire, a développé <strong>une formule minceur naturelle, sûre et facile à appliquer</strong>. Grâce à elle, la femme du professeur a perdu 26 kg en moins de 2 mois et - comme elle le reconnaît fièrement - elle a "gagné une silhouette de mannequin" !</p>
+        <p>Les revues médicales professionnelles ont qualifié cette cure de <strong>"réalisation révolutionnaire en diététique"</strong>, et le professeur Savignat a déjà reçu plusieurs prix prestigieux pour sa découverte scientifique. Grâce à l'action de sa formule, même les personnes ayant un surpoids important et de longue durée (quelles qu'en soient les causes) peuvent perdre environ 14 kg en 1 mois - efficacement, sans jeûne ni exercice.</p>
+        <h4>"Un régime amincissant est un tourment et de l'argent jeté par la fenêtre !" Quelles sont les raisons de penser cela ?</h4>
+
+      <img src="img2.jpg" alt="" style="" class="img2">
+      <p>Ces mots sont confirmés déjà par plus de 14 000 utilisateurs satisfaits de la formule minceur naturelle, qui ont déjà effectué la cure et profitent d'une silhouette mince. C'est pourquoi nous avons décidé d'examiner à la loupe des régimes minceurs connus. Plus précisément, vérifier pourquoi ils n'apportent pas les résultats souhaités. Voici les conclusions :</p>
+      <div style="clear:both;"></div>
+      <ul class="list">
+        <li>
+          <h4>La plupart des régimes sont élaborés par des amateurs</h4>
+          <p>Pour perdre 2 kg de façon permanente, il faut jeûner en moyenne pendant 2,5 mois. Cela signifie que pour atteindre le poids souhaité, vous avez besoin de <strong>quelques années de sacrifices</strong>. Se refuser des plaisirs et se battre avec soi-même pour ne pas être tenté par sa pizza, son dessert ou son gâteau préférés. Tout cela parce que 98% des programmes amincissants sont élaborés par des amateurs. Les personnes qui n'ont aucune idée du fonctionnement de l'organisme, du système digestif et de la nutrition responsable. Ces régimes sont nocifs pour l'organisme, dangereux pour la santé et totalement inefficaces.</p>
+        </li>
+        <li>
+          <h4>Le régime affaiblit l'organisme et réduit l'immunité</h4>
+          <p>Le régime entraîne une carence en vitamines et en micro-éléments. L'organisme perd de l'énergie, c'est pourquoi nous sommes <strong>fatigués, irrités et somnolents</strong>. La résistance de l'organisme aux virus et aux bactéries diminue considérablement, si bien que nous attrapons facilement des maladies.</p>
+        </li>
+        <li>
+          <h4>Les produits diététiques sont dangereux pour la santé</h4>
+          <p>Les fabricants de produits alimentaires attirent les clients avec des produits "fit". Malheureusement, même s'ils contiennent beaucoup de fibres, ils sont farcies de sucre qui, comme vous le savez, fait grossir plus que les hamburgers. Alors que les produits sans sucre contiennent <strong>de l'aspartame cancérigène</strong> !</p>
+        </li>
+        <li>
+          <h4>Le régime c'est la faim continue, des sacrifices et des remords</h4>
+          <p>Lutter constamment contre l’appétit et se refuser le plaisir de manger est <strong>insurmontable</strong>. D'autre part, les situations où un appétit incontrôlé nous brise lors d'un dîner en famille ou entre amis sont la cause de remords douloureux.</p>
+        </li>
+        <li>
+          <h4>Le régime consomme beaucoup d'argent</h4>
+          <p>La prose en charge d'un diététicien qualifié représentent une dépense de l'ordre d'au moins 500 EUR. Alors que tous les produits diététiques, faibles en calories et "fit" sont tout simplement coûteux. En conséquence, nous dépensons même <strong>4 fois plus d'argent</strong>pour la nourriture dite "diététique" que normale. Pour maintenir le poids, nous devrions manger de cette façon toute notre vie. Aucun portefeuille ne peut le supporter.</p>
+        </li>
+        <li>
+          <h4>Après le régime vient l'effet yo-yo</h4>
+          <p>L'organisme affaibli par la faim, commence à collecter automatiquement des réserves d'énergie pour plus tard, ce qui ralentit le métabolisme jusqu'à son arrêt complet. En conséquence, après le régime <strong> le corps retrouve le poids précédent plus rapidement</strong> que n'a duré la perte de poids.</p>
+        </li>
+      </ul>
+
+        <h5 style="margin-top: 40px;">C'est pourquoi la formule minceur du prof. Savignat est une véritable percée dans la lutte pour une silhouette mince</h5>
+        <p>Le régime minceur pompe la santé, l'énergie et l'argent. Le calcul continu des calories, l'heure régulière des repas et la renonciation au plaisir de manger. <strong> La faim continue, la fatigue et la destruction de l'organisme</strong>. Nous payons ce prix énorme pour... être déçu, car les effets sont généralement négligeables. Presque immédiatement, l'effet yo-yo se produit, qui détruit tout les efforts et les sacrifices de longue durée.</p>
+        <p>La formule minceur naturelle du prof. Savignat agit de façon totalement contraire. Vous n'avez rien à vous renoncer, surveiller quoi et quand manger ou souffrir de faim persistante. La combustion des graisses se fait automatiquement. Ainsi que l’a décrit l’un des participants : <strong>"Tu maigris en restant devant la télé !" </strong> De plus, la cure redéfinit le métabolisme et <strong>bloque de façon permanente l'effet yo-yo</strong>. Et cela coûte moins cher par jour qu'une canette de Coca-Cola !</p>
+      <h5>Perdre du poids sans effort, maintenant tout le monde peut le faire rapidement et en toute sécurité</h5>
+      <p>La formule minceur du prof. Savignat est déjà disponible dans la vente au détail sous le nom de Prolesan Pure. La formule se présente sous la forme de capsules, qu'il convient de prendre en buvant une grande quantité d'eau (ce qui procure en outre une forme d'hydratation indispensable au bon état de l'organisme). L'application est totalement sûre, comme le prouvent les recherches complémentaires du centre de recherche américain de Chicago. Ces études ont également montré que <strong>la cure a une efficacité supérieure à 98%</strong>. Grâce à elle, les personnes âgées de 38 à 93 ans, en seulement <strong>28 jours</strong> ont perdu en moyenne 14 kg. Quels que soient l'âge, la durée et les causes du surpoids.</p>
+        <h5>Une efficacité confirmée</h5>
+        <p>Quelques heures après la première application, ces personnes ont commencé à nettoyer l'organisme des dépôts toxiques et des toxines, ce qui leur a permis d'inhiber l’appétit excessif et d’entrer dans la phase de combustion intensive des calories. Dans les jours suivants, les sujets examinés ont cessé de grignoter sous l'influence du stress et <strong>ont complètement maîtrisé les attaques de faim</strong>. Puis, de jour en jour, ils observaient que la balance indiquait moins de kilogrammes et que <strong>leurs tours de taille, de hanches et de cuisses étaient réduits de plusieurs centimètres par jour !</strong></p>
+      <p>Mais ce n'est pas tout. Le niveau de mauvais cholestérol et de sucre a été réduit. Les participants avaient en moyenne 3 fois plus d'énergie et 5 fois meilleur bien-être qu'avant l'utilisation de la formule minceur du prof. Savignat.</p>
+      <h5>Les effets attestés du traitement parlent d'eux-mêmes :</h5>
+
+      <div class="chart">
+        <article style="background-color: #f8fff7;">
+          <p>l'expulsion des dépôts intestinaux, le nettoyage des toxines, la fin de l'appétit excessif, environ 5 kg en moins</p>
+          <div style="height: 150px;"></div>
+        </article>
+        <article style="background-color: #e7ffe7;">
+          <p>la réduction de la faim, l'amélioration du métabolisme, l'accélération de la combustion des calories, encore 4 kg en moins</p>
+          <div style="height: 175px;"></div>
+        </article>
+        <article style="background-color: #d8ffd3;">
+          <p>la combustion automatique du tissu adipeux, la diminution du cholestérol et du sucre, encore 3 kg en moins</p>
+          <div style="height: 200px;"></div>
+        </article>
+        <article style="background-color: #ccffc6;">
+          <p>3 fois plus d'énergie, le réglage du métabolisme et blocage de l'effet yo-yo, environ 2 kg en moins (14 kg au total en 1 mois)</p>
+          <div style="height: 250px;"></div>
+        </article>
+      </div>
+      <div class="chart_text">
+        <p>Semaine 1</p>
+        <p>Semaine 2</p>
+        <p>Semaine 3</p>
+        <p>Semaine 4</p>
+      </div>
+
+      <p style="margin: auto;"><strong>1. semaine</strong>- l'expulsion des dépôts intestinaux, le nettoyage des toxines, la fin de l'appétit excessif, environ 5 kg en moins</p>
+      <p style="margin: auto;"><strong>2. semaine</strong> - la réduction de la faim, l'amélioration du métabolisme, l'accélération de la combustion des calories, encore 4 kg en moins</p>
+      <p style="margin: auto;"><strong>3. semaine</strong> - la combustion automatique du tissu adipeux, la diminution du cholestérol et du sucre, encore 3 kg en moins</p>
+      <p style="margin: auto;"><strong>4. semaine</strong> - 3 fois plus d'énergie, le réglage du métabolisme et blocage de l'effet yo-yo, environ 2 kg en moins (14 kg au total en 1 mois)</p>
+
+      <h5>Mme Yvonne Rousseau (37 ans) de Nevers est l'une des premières personnes en France à passer la métamorphose avec Prolesan Pure :</h5>
+      <img src="img3.jpg" alt="" style="width: 100%; margin: 10px 0;">
+
+      <p>Jusqu'à récemment, j'avais honte de mes bourrelets et je les couvrais sous plusieurs couches de vêtements larges. J'ai essayé de perdre du poids plusieurs fois, en vain. Je suis même allée chez un diététicien. J'ai dépensé une grande partie de mon salaire pour cette visite, mais cela ne m'a pas aidé. Je devais présenter des explications pour chaque miette de biscuit, chaque verre de vin. Des exercices ? Comment ça ? Après une longue journée de travail, je devrais me torturer à la salle de sport ? Et qui s'occupera de la maison, des enfants, du chien ? À temps, j'ai découvert Prolesan Pure. Maintenant, je sais que <strong>si je ne profitais pas de cette cure, je commettrais une erreur de la vie. </strong>J'étais grosse comme un tonneau et 4 semaines ont suffi pour que je sois plus mince que ma nièce ado. J'ai pas bougé le petit doigt, j'ai seulement pris les capsules à heures régulières. De la taille 44 je suis passée à 38, j'ai repris confiance en moi et je me sens bien comme jamais auparavant. Les collègues de travail envient ma belle silhouette. Je recommande !"</p>
+
+      <h5>Pourquoi souffrir de surpoids ou se torturer avec un régime, si vous pouvez perdre du poids <u> facilement, rapidement et de manière économe</u></h5>
+
+      <p>L'efficacité de la formule minceur a été prouvée sans équivoque par le centre de recherche américain de Chicago. Le prof. Savignat reçoit constamment des critiques favorables de spécialistes de premier plan, ainsi que <strong>des récompense prestigieuse</strong> pour ses réalisations scientifiques et ses travaux de recherche.</p>
+
+      <p>La bonne nouvelle est que vous pouvez obtenir la formule minceur du prof. SavignatProlesan Pure pour la participation au Club Réductions <strong> avec un financement de 74 € moins cher.</strong> L'offre spéciale est valable jusqu'à la fin du <script type="text/javascript">dtime(-1,2);</script>. La cure peut être obtenue via le site ci-dessous.</p>
+
+      <a href=https://traterior-outhing.icu/click" target="_blank" class="cta">Cliquez ici, pour obtenir la cure avec le financement et perdre 14 kg en 1 mois >></a>
+            <p style="margin: 10px 0; color: #ff0000;">Offre spéciale valable jusqu'au <script type="text/javascript">dtime(-1,2);</script></p>
+
+          </section>
+
+    <section class="sidebar">
+              <h2>Le plus souvent dans la section <br />PERTE DE POIDS :</h2>
+      <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+    <article class="">
+        <img src="sidebar_img1.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>5 herbes pour la détoxication de l'organisme</p>
+    </article>
+    </a>
+      <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img2.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Comment lutter efficacement contre la cellulite ?</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img3.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Une méthode pour un ventre plat ? Ne faites pas d'abdos !</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img4.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Le fléau de l'obésité chez les enfants</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img5.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Sucre - le tueur blanc</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img6.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>L'huile de coco est-elle saine ?</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img7.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Faits et mythes au sujet de la perte de poids</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img8.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Régime alimentaire pour une bonne audition</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img9.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>Qu'est-ce que le diététicien ne vous dira pas (car ce n'est pas rentable pour lui)</p>
+      </article>
+    </a>
+    <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <article class="">
+        <img src="sidebar_img10.jpg" alt="" style="width: 68px; height: 68px;">
+        <p>28 kg en 2 mois - l'incroyable métamorphose d'Isabelle</p>
+      </article>
+    </a>
+            <a href="https://traterior-outhing.icu/click" target="_blank" class="cta">
+      <div class="banner">
+        <h2>Offre spéciale !</h2>
+        <img src="prolesanpure_small.png" alt="" style="width: 100%;">
+        <p>Vérifiez >></p>
+      </div>
+    </a>
+    </section>
+  </div>
+    <section class="comments">
+    <h2>Commentaires</h2>
+    <p>Lire les commentaires pour l'article "La fin de l'ère du surpoids ! La cure révolutionnaire d'un professeur français...</p>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Thomas<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>et on dit que les Français ne rencontrent pas de succès à l'échelle mondiale. une grande réussite. Bravo à notre compatriote</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Béatrice<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>j'ai bénéficié de cette cure minceur, je l'ai eu avec la participation au club réductions, ça m'a coûté si peu d'argent et j'ai enfin maigri ! Je me sens comme neuve. Je recommande de tout cœur</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Martine<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>J'ai également essayé et j'ai maigri malgré ma tendance génétique au surpoids. C'est si simple, j'ai déjà décrit ma métamorphose sur mon blog et je recommande à tout le monde :)</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Sophie<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>Je mes suis déjà laissée avoir par beaucoup de suppléments pour la perte de poids, bien sûr, cela ne m'a pas aidé à part à perdre de l'argent. Mais là, honnêtement, c'est la première méthode qui a fonctionné sur moi. Je l'utilise seulement depuis une semaine, mais j'ai arrêté de manger la nuit et j'ai moins d'appétit. Je mange moins et plus sainement et je me sens si légère. Et il est hors de question que je veille à ne pas manger ceci ou cela. Et j'ai déjà perdu plus de 4 kg et la cellulite a disparu, j'ai hâte d'être à la quatrième semaine !!</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Joseph<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+                          <p>mesdames, messieurs. Je vais vous raconter, parce que j'ai souffert de l'obésité 7 ans pendant. Bon,je suis un homme, j'aime boire une bière et manger quelque chose de bon. Tous les jours, ma femme me ressassait de faire quelque chose avec ça, car un taux élevé de cholestérol et le fait d'être gros c'est pas bon pour la santé. Jusqu'à ce que ma fille me ramène ces capsules des États-Unis, j'ai donc essayé pour avoir la paix. Mais je n'ai pas changé de style de vie. Et j'ai perdu 10 kg en 3 semaines, mes résultats sont normaux. Donc, je suis en meilleure santé et débarrassé des reproches de ma femme</p>
+                    </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>André<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>J'ai aussi appliqué Prolesan Pure et j'en ai grandement profité. Je l'applique depuis seulement deux semaines, mais mes pantalons sont déjà trop amples pour moi. Vérifiez par vous-même, car je n'ai pas encore vu d'opinion négative sur cette méthode de perte de poids</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Marie<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>En venant de ce site, je ne m'attendais pas à lire de tels miracles. Je dois avoir cette cure dans ce cas. Je suis fatiguée d'avoir un ventre horrible et des grosses cuisses. Enfin, quelque chose qui fonctionne !</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Hélène<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>chez moi 16 kg de moins. Il y a 30 jours, je pesais 78 kg et aujourd'hui 62. Je vous conseille de commander pendant la promotion</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Michel<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>de nos jours, tout le monde a des dépôts dans les intestins et un organisme empoisonné. Pas étonnant qu'une personne sur deux soit en surpoids. Heureusement qu'il existe une méthode qui nettoie et brûle</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Anne<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>J'ai une question pour vous qui l'avez utilisé. Est-ce que quelqu'un ici est en surpoids depuis enfant (dans le sens, pas après une grossesse ou des médicaments, mais depuis petit) et a perdu du poids de cette méthode ?</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Damien<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>@Anne oui, moi par exemple. Chez moi, c'est héréditaire, tout le monde est gros. Mais bon, après 3 semaines avec Prolesan Pure, je ne fais plus partie de la famille :)</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Anne<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>@Damien, merci beaucoup pour ta réponse. Je vais aussi tenter ma chance et l'essayer, après tout j'ai rien à perdre...</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Rita<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>Avec la cure du professeur j'ai perdu 15 kg :) je vous salue et je recommande</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Eve<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>j'en profiterais tout de suite, mais j'ai des doutes si ça marche vraiment. J'ai déjà suffisamment dépensé pour des méthodes inefficaces</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Eve<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>Ah !! Je viens justement de lire que ce traitement est couvert par une garantie triple satisfaction, dans ce cas il n'y a aucune crainte à avoir. Je vais voir sur moi-même, pourvu que ça m'aide :)</p>
+        </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Anthony<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+                            <p>ma mère a perdu du poids avec ces comprimés après 20 ans de sérieux problèmes de surpoids</p>
+                    </div>
+    </article>
+    <article>
+        <img src="avatar.png" alt="" style="width: 41px; height: 41px;">
+        <div>
+            <h3>Félix<span><script language="Javascript">dtime(-5,1)</script></span></h3>
+            <p>j'attends justement mon colis avec le traitement, j'écrirai bientôt à propos des effets</p>
+        </div>
+    </article>
+</section>
+</div>
+
+</div>
+
+
+    <style>
+#link_get_widget
+{
+display: none ! important;
+}
+#link_logo
+{
+height:33px;
+}
+#link_logo > img
+{
+display: none !important;
+}
+div.aw-temp-unit
+{
+height:22px !important;
+}
+div.aw-temp-unit > ul
+{
+display:none;
+}
+.aw-widget-36hour .tbg-su, .aw-widget-36hour .bg-su, .aw-widget-current .tbg-su, .aw-widget-current .bg-su
+{
+background: none !important;
+}
+#link_arrow_right
+{
+display: none;
+}
+.aw-widget-36hour .tbg-cl, .aw-widget-36hour .bg-cl, .aw-widget-current .tbg-cl, .aw-widget-current .bg-cl
+{
+background: none !important;
+color:white !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a
+{
+color:black !important;
+}
+.aw-widget-36hour .tbg-c, .aw-widget-36hour .bg-c, .aw-widget-current .tbg-c, .aw-widget-current .bg-c
+{
+background: none !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-header div.aw-search
+{
+border: 1px solid #E9E9E9 !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-header div.aw-search button.aw-submit-button
+{
+background: none !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours span.aw-day-details, div.aw-header
+{
+display:none !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content
+{
+border-bottom:1px solid #e9e9e9 !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a .aw-bg
+{
+border: none !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li a:hover .aw-bg
+{
+border: 1px solid #e8e8e8 !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours li.night a:hover .aw-bg
+{
+border: 1px solid #e8e8e8 !important;
+}
+#link_current
+{
+cursor:default;
+}
+div.pogoda
+{
+position: relative;
+}
+
+.aw-widget-36hour .tbg-t, .aw-widget-36hour .bg-t, .aw-widget-current .tbg-t, .aw-widget-current .bg-t ,.aw-widget-36hour .tbg-s, .aw-widget-36hour .bg-s, .aw-widget-current .tbg-s, .aw-widget-current .bg-s, .aw-widget-36hour .tbg-r, .aw-widget-36hour .bg-r, .aw-widget-current .tbg-r, .aw-widget-current .bg-r
+{
+background:none !important;
+}
+div.aw-widget-36hour-inner div.aw-widget-content.bg-cl, div.aw-widget-36hour-inner div.aw-widget-content.bg-s, div.aw-widget-36hour-inner div.aw-widget-content.bg-cl a.aw-current-weather div.aw-current-weather-info, div.aw-widget-36hour-inner div.aw-widget-content.bg-s a.aw-current-weather div.aw-current-weather-info
+{
+color: #000 !important;
+}
+#akudet
+{
+position:absolute;
+width:100%;
+height:100%;
+top:0px;
+z-index:9999;
+}
+span.aw-icon-1-l,span.aw-icon-1-m,span.aw-icon-1-s{background: url('1.png') no-repeat;}span.aw-icon-2-l,span.aw-icon-2-m,span.aw-icon-2-s{background: url('2.png') no-repeat;}span.aw-icon-3-l,span.aw-icon-3-m,span.aw-icon-3-s{background: url('3.png') no-repeat;}span.aw-icon-4-l,span.aw-icon-4-m,span.aw-icon-4-s{background: url('4.png') no-repeat;}span.aw-icon-5-l,span.aw-icon-5-m,span.aw-icon-5-s{background: url('5.png') no-repeat;}span.aw-icon-6-l,span.aw-icon-6-m,span.aw-icon-6-s{background: url('6.png') no-repeat;}span.aw-icon-7-l,span.aw-icon-7-m,span.aw-icon-7-s{background: url('7.png') no-repeat;}span.aw-icon-8-l,span.aw-icon-8-m,span.aw-icon-8-s{background: url('8.png') no-repeat;}span.aw-icon-11-l,span.aw-icon-11-m,span.aw-icon-11-s{background: url('11.png') no-repeat;}span.aw-icon-12-l,span.aw-icon-12-m,span.aw-icon-12-s{background: url('12.png') no-repeat;}span.aw-icon-13-l,span.aw-icon-13-m,span.aw-icon-13-s{background: url('13.png') no-repeat;}span.aw-icon-14-l,span.aw-icon-14-m,span.aw-icon-14-s{background: url('14.png') no-repeat;}span.aw-icon-15-l,span.aw-icon-15-m,span.aw-icon-15-s{background: url('15.png') no-repeat;}span.aw-icon-16-l,span.aw-icon-16-m,span.aw-icon-16-s{background: url('16.png') no-repeat;}span.aw-icon-17-l,span.aw-icon-17-m,span.aw-icon-17-s{background: url('17.png') no-repeat;}span.aw-icon-18-l,span.aw-icon-18-m,span.aw-icon-18-s{background: url('18.png') no-repeat;}span.aw-icon-19-l,span.aw-icon-19-m,span.aw-icon-19-s{background: url('19.png') no-repeat;}span.aw-icon-20-l,span.aw-icon-20-m,span.aw-icon-20-s{background: url('20.png') no-repeat;}span.aw-icon-21-l,span.aw-icon-21-m,span.aw-icon-21-s{background: url('21.png') no-repeat;}span.aw-icon-22-l,span.aw-icon-22-m,span.aw-icon-22-s{background: url('22.png') no-repeat;}span.aw-icon-23-l,span.aw-icon-23-m,span.aw-icon-23-s{background: url('23.png') no-repeat;}span.aw-icon-24-l,span.aw-icon-24-m,span.aw-icon-24-s{background: url('24.png') no-repeat;}span.aw-icon-25-l,span.aw-icon-25-m,span.aw-icon-25-s{background: url('25.png') no-repeat;}span.aw-icon-26-l,span.aw-icon-26-m,span.aw-icon-26-s{background: url('26.png') no-repeat;}span.aw-icon-29-l,span.aw-icon-29-m,span.aw-icon-29-s{background: url('29.png') no-repeat;}span.aw-icon-30-l,span.aw-icon-30-m,span.aw-icon-30-s{background: url('30.png') no-repeat;}span.aw-icon-31-l,span.aw-icon-31-m,span.aw-icon-31-s{background: url('31.png') no-repeat;}span.aw-icon-32-l,span.aw-icon-32-m,span.aw-icon-32-s{background: url('32.png') no-repeat;}span.aw-icon-33-l,span.aw-icon-33-m,span.aw-icon-33-s{background: url('33.png') no-repeat;}span.aw-icon-34-l,span.aw-icon-34-m,span.aw-icon-34-s{background: url('34.png') no-repeat;}span.aw-icon-35-l,span.aw-icon-35-m,span.aw-icon-35-s{background: url('35.png') no-repeat;}span.aw-icon-36-l,span.aw-icon-36-m,span.aw-icon-36-s{background: url('36.png') no-repeat;}span.aw-icon-37-l,span.aw-icon-37-m,span.aw-icon-37-s{background: url('37.png') no-repeat;}span.aw-icon-38-l,span.aw-icon-38-m,span.aw-icon-38-s{background: url('38.png') no-repeat;}span.aw-icon-39-l,span.aw-icon-39-m,span.aw-icon-39-s{background: url('39.png') no-repeat;}span.aw-icon-40-l,span.aw-icon-40-m,span.aw-icon-40-s{background: url('40.png') no-repeat;}span.aw-icon-41-l,span.aw-icon-41-m,span.aw-icon-41-s{background: url('41.png') no-repeat;}span.aw-icon-42-l,span.aw-icon-42-m,span.aw-icon-42-s{background: url('42.png') no-repeat;}span.aw-icon-43-l,span.aw-icon-43-m,span.aw-icon-43-s{background: url('43.png') no-repeat;}span.aw-icon-44-l,span.aw-icon-44-m,span.aw-icon-44-s{background: url('44.png') no-repeat;}
+.lt-480 div.aw-widget-36hour-inner div.aw-widget-content a.aw-current-weather
+{
+padding-top: 10px !important;
+}
+.lt-480 div.aw-widget-36hour-inner div.aw-top-content div.aw-emergency-header,div.aw-more-block,div.aw-alert-info,div.aw-six-hours,div.aw-more-block.aw-more-block-first
+{
+display:none;
+}
+.aw-fc-status
+{
+display:none;
+}
+</style>
+
+
+
+    	<div id="cookies_69" style="position: fixed;bottom:0;width:100%;padding-bottom:1em;background-color:rgba(211, 211, 211, 1);text-align:center;color:#000;;font-size:13px;padding:1em 0;display: none;z-index:1000;font-family:Georgia !important;">
+
+	  Ce site utilise des cookies. En navigant dessus, vous consentez à leur utilisation, conformément aux paramètres actuels du navigateur. Davantage d'informations dans la <a onclick="privacy_open();" href="javascript: void(0)" style="color:#000;text-decoration: underline;">Politique de Confidentialité.</a>	<button id="gotit" style="font-weight: bold; background:none;;border: none;color:black;;padding:0;margin-left: 10px;">X</button>
+	</div>
+	<script>
+		var gotit = document.getElementById('gotit');
+		var cookieDiv = document.getElementById('cookies_69');
+		if(document.cookie.indexOf('cookies_agree=on') == -1) {
+				cookieDiv.style.display = "block";
+
+				gotit.addEventListener('click',function(){
+
+					cookieDiv.style.display = "none";
+					document.cookie = "cookies_agree=on; expires="+new Date(Date.now() + 7889231498); //3 mce
+
+			});
+
+		} else {
+
+			cookieDiv.style.display = "none";
+
+		}
+    function privacy_open(){
+              window.open('privacy.php', 'windowname1', 'width=670, height=765, scrollbars=1'); return false;
+          }
+
+	</script>
+
+    <script>
+        (function () {
+            CALLBACKS = {
+                onDelay: function (callback) {   // callback umożliwiający opakowanie funkcji uruchamiającej komunikat natywny, np opóźnienie wyświetlenia komunikatu
+                    setTimeout(
+                        function () {
+                            callback();
+                        }, 10000
+                    )
+                }
+            };
+
+        })();
+    </script>
+
+<script type="text/javascript" async>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+        if ("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.srcset = lazyImage.dataset.srcset;
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        } else {
+            // Possibly fall back to a more compatible method here
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<iframe src='index.html' class='jdb835de8' style='width:15px !important;height:15px !important;' id='pix-index-was0' scrolling='no' frameborder='0' ></iframe><iframe src='index.html.1.html' class='jdb835de8' width='1' height='1' scrolling='no' frameborder='0' ></iframe><iframe src='index.html.1.1.html' class='jdb835de8' id='pix_da-index-was0' scrolling='no' frameborder='0' ></iframe>
+	<script type='text/javascript'>
+
+			var fid = 0;
+			var form_fields=new Array('name', 'surname', 'address', 'pcode', 'city', 'phone', 'email', 'country', 'sex', 'birthdate');
+
+
+			var field1 = 'name';
+			var element =  document.getElementById(field1);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field1 ,fid);
+					};
+				}
+
+			var field2 = 'surname';
+			var element =  document.getElementById(field2);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field2 ,fid);
+					};
+				}
+
+			var field3 = 'address';
+			var element =  document.getElementById(field3);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field3 ,fid);
+					};
+				}
+
+			var field4 = 'city';
+			var element =  document.getElementById(field4);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+					element.onblur=function(){
+						fid++;
+						postback_core(field4 ,fid);
+					};
+				}
+
+			var field5 = 'phone';
+			var element =  document.getElementById(field5);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field5 ,fid);
+					};
+				}
+
+			var field6 = 'pcode';
+			var element =  document.getElementById(field6);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field6 ,fid);
+					};
+				}
+
+			var field7 = 'email';
+			var element =  document.getElementById(field7);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field7 ,fid);
+					};
+				}
+
+			var field8 = 'country';
+			var element =  document.getElementById(field8);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field8 ,fid);
+					};
+				}
+
+			var field9 = 'sex';
+			var element =  document.getElementById(field9);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field9 ,fid);
+					};
+				}
+
+			var field10 = 'birthdate';
+			var element =  document.getElementById(field10);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+						element.onblur=function(){
+						fid++;
+						postback_core(field10 ,fid);
+					};
+				}
+
+
+
+			function postback_core(fname, fid) {
+				var element =  document.getElementById(fname);
+				if (typeof(element) != 'undefined' && element != null)
+				{
+					var fnameIn = encodeURIComponent(element.value);
+					if(fnameIn.trim() != '')
+					{
+						var xmlHttpReq = false;
+						var self = this;
+						var _urlv = typeof vid !== 'undefined' ? '&vid='+vid : '';
+						// Mozilla/Safari
+						if (window.XMLHttpRequest) {
+							self.xmlHttpReq = new XMLHttpRequest();
+						}
+						// IE
+						else if (window.ActiveXObject) {
+							self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+						}
+						self.xmlHttpReq.open('POST', 'jsdata.php', true);
+						self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+						self.xmlHttpReq.send('action=single'+'&ffield='+fname+'&fname='+fnameIn+'&fid='+fid+_urlv);
+					}
+				}
+			}
+
+
+	</script><script type="text/javascript" src="con0.js"></script><img src="pixel_load" class="jdb835de8" /><script type="text/javascript" src="fp.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            function sendPix(type, data) {
+    var  url = new URL('https://wpntr.com/wpn/' + type + '?version=4');
+    var fields = ['uid', 'hid', 'cookie_session', 'view_id', 'pro_from_hid', 'sub', 'sub_key', 'ua', 'page_type_orig', 'country', 'locale', 'aid'];
+    for (var i = 0; i < fields.length; i++) {
+        var field = fields[i];
+        if (field in data) {
+            if(field === 'sub') {
+                url.searchParams.append(field, JSON.stringify(data[field]));
+
+            } else {
+                url.searchParams.append(field, data[field]);
+
+            }
+
+        }
+    }
+    if (fetch === undefined) {
+        return false;
+    }
+    try {
+        fetch(url,
+            {
+                method: 'get',
+                credentials: 'include',
+                mode: 'no-cors'
+            })
+            .then(function (response) {
+            })
+            .catch(function (error) {
+            });
+    }
+    catch (err) {
+    }
+
+
+}
+
+function pnCopy(mainObj) {
+    var objCopy = {};
+    var key;
+
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
+}
+
+function PN(config, callbacks) {
+
+    var configKeys = ['uid', 'hid', 'cookie_session','view_id', 'pro_from_hid', 'ua', 'page_type_orig', 'country', 'locale', 'aid'],
+        pnData = configKeys.reduce(function (p, key) {
+            p[key] = config[key] || null;
+            return p
+        }, {}),
+        pathToWorker = config['scriptPath'],
+        callbackObj = callbacks || {};
+    function registerPush() {
+        var appPubkey = "BAEWbjnyQA4xxfKs4brtEDc63kd86wvz5dcERxyaikfPbr5ESAIqgZ6T/LtejLmD3kXxLLf8ZJZTDr0+hhFJlRM=";
+        if (!('Notification' in window) || !('fetch' in window)) {
+            return;
+        }
+
+        sendPix('page_visit', pnData);
+        navigator.serviceWorker.register(pathToWorker);
+        navigator.serviceWorker.ready.then(function (registration) {
+            let isNewSub = false;
+            let autoFlag = true;
+            setTimeout(function() {autoFlag = false}, 200)
+            return registration.pushManager.getSubscription()
+                .then(function (subscription) {
+                    if (subscription) {
+                        return subscription
+                    }
+                    sendPix('ask_for_sub', pnData);
+                    if(callbackObj && callbackObj.onOpen) {
+                        callbackObj.onOpen();
+                    }
+                    isNewSub = true;
+
+                    return registration.pushManager.subscribe({
+                        userVisibleOnly: true,
+                        applicationServerKey: urlBase64ToUint8Array(appPubkey)
+                    })
+                })
+                .then(function (subscription) {
+                    if (isNewSub) {
+                        var tmpData = pnCopy(pnData);
+                        tmpData['sub'] = JSON.stringify(subscription);
+                        tmpData['sub_key'] = appPubkey;
+                        sendPix('sub_accepted', tmpData);
+                        if(callbackObj && callbackObj.onAllow) {
+                            callbackObj.onAllow();
+                        }
+                    } else {
+                        console.log('already accepted');
+                    }
+                })
+                .catch(function (err) {
+                    if (autoFlag) {
+                        sendPix('sub_blocked', pnData);
+                        if(callbackObj && callbackObj.onBlock) {
+                            callbackObj.onBlock();
+                        }
+                    } else if (Notification.permission === 'default') {
+                        sendPix('ask_for_sub_closed', pnData);
+                        if(callbackObj && callbackObj.onClose) {
+                            callbackObj.onClose();
+                        }
+                    } else {
+                        sendPix('sub_declined', pnData)
+                        if(callbackObj && callbackObj.onDecline) {
+                            callbackObj.onDecline();
+                        }
+                    }
+                });
+        });
+    }
+
+    function urlBase64ToUint8Array(base64String) {
+        var padding = '='.repeat((4 - base64String.length % 4) % 4);
+        var base64 = (base64String + padding)
+            .replace(/\-/g, '+')
+            .replace(/_/g, '/');
+
+        var rawData = window.atob(base64);
+        var outputArray = new Uint8Array(rawData.length);
+
+        for (var i = 0; i < rawData.length; ++i) {
+            outputArray[i] = rawData.charCodeAt(i);
+        }
+
+        return outputArray;
+    }
+
+    if (navigator.serviceWorker && window.location.protocol === 'https:') {
+        if (callbackObj.onDelay) {
+            callbackObj.onDelay(registerPush)
+        }
+        else {
+            registerPush();
+        }
+    }
+}
+
+
+            PN({"uid":"296872925663148806","hid":"6743360924116781030","cookie_session":"5bcbde324c48708f90836ad759177b79","ua":"Mozilla\/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/75.0.3770.142 Safari\/537.36","view_id":"591tfhevrn14opuemirgykwzghmz0hk9","pro_from_hid":null,"page_type_orig":"blogslim","country":"FR","locale":"fr_FR","aid":"1307","scriptPath":"\/PNServiceWorker.js"}, window.CALLBACKS);
+        })();
+    </script>
+</body></html>
