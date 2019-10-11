@@ -1,0 +1,370 @@
+@import "reset.css";
+.header-menu-item-hover {
+    background: white;
+    color: black;
+}
+
+body {
+    font-size: 16px;
+}
+
+.limit {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+header {
+    position: relative;
+    background: blue;
+    z-index: 99;
+    padding: 20px 0;
+}
+
+header .menu {
+    display: table;
+    font-size: 0;
+}
+
+header .menu .item {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+header .menu .item a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+header .menu .item a {
+    background: #453423;
+}
+
+header .menu .item a:hover {
+    background: white;
+    color: black;
+}
+
+header {
+    width: 100%;
+}
+
+header .limit {
+    position: relative;
+}
+
+header .menu {
+    margin: 0 auto;
+}
+
+header .menu {
+    position: relative;
+    top: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    border: 0;
+    text-decoration: none;
+}
+
+.logo img {
+    border: 0;
+}
+
+main {
+    display: block;
+}
+
+main .content {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+}
+
+main .content .imageCont {
+    text-align: center;
+    margin: 10px auto;
+}
+
+main .content .imageCont img {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 300px;
+}
+
+main .content .text h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #2d67c4;
+}
+
+main .content .text p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+main .content .text a {
+    text-decoration: none;
+}
+
+main .sidebar {
+    display: inline-block;
+    width: 26%;
+    float: right;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main .sidebar .imageCont img {
+    border: none;
+    width: 100%;
+}
+
+.sidebar {
+    content: 'scrollSideBar';
+}
+
+main {
+    padding-top: 38px;
+}
+
+.imageInText.top {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.imageInText.left {
+    float: left;
+    max-width: 300px;
+    margin: 5px 10px 0 0;
+}
+
+.imageInText.right {
+    float: right;
+    max-width: 300px;
+    margin: 5px 0 0 10px;
+}
+
+.imageInText.center {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.commentView {
+    display: none;
+}
+
+main #facebook {
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f6f7f9;
+    font-family: Arial;
+}
+
+.h2-comments {
+    font-size: 22px;
+}
+
+main #facebook .avatar {
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+main #facebook .writeComment {
+    box-sizing: border-box;
+}
+
+main #facebook .writeComment:before,
+main #facebook .writeComment:after {
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+main #facebook .writeComment .form {
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+main #facebook .writeComment .form input {
+    display: block;
+    padding: 7px 5px;
+    border: 1px solid #9a9a9a;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+main #facebook .writeComment .form .inscription {
+    font-size: 10px;
+    color: #ccc;
+}
+
+main #facebook .commentsList:before,
+main #facebook .commentsList:after {
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+main #facebook .commentsList .commentItem {
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+main #facebook .commentsList .commentItem .commentBody {
+    padding-left: 40px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+main #facebook .commentsList .commentItem .commentBody .username {
+    color: #3b5998;
+    font-weight: 600;
+}
+
+main #facebook .commentsList .commentItem .commentBody .commentAction a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+main #facebook .commentsList .commentItem .commentBody .commentAction .circle {
+    font-size: 7px;
+    position: relative;
+    top: -2px;
+    padding: 0 5px;
+}
+
+main #facebook .commentsList .commentItem .commentBody .commentAction .likeImage {
+    position: relative;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+}
+
+main #facebook .commentsList .commentItem .commentBody .commentAction .likeCount {
+    color: #ccc;
+}
+
+main #facebook .commentsList .commentItem .commentBody .commentAction .time {
+    color: #ccc;
+}
+
+main #facebook {
+    display: block;
+}
+
+header .mobileMenu {
+    display: none;
+}
+
+.center-wrap {
+    text-align: center;
+}
+
+@media screen and (max-width: 878px) {
+    .center-wrap {
+        width: 100%;
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+    }
+    main .sidebar {
+        display: none;
+    }
+    .logo {
+        position: relative;
+        transform: none;
+    }
+    main .content {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    footer {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    header .menu {
+        display: none;
+    }
+    header a {
+        text-decoration: none;
+    }
+    header .mobileMenu {
+        display: block;
+        color: #000000;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imageInText.left,
+    .imageInText.right {
+        float: none;
+        display: block;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    main .commentsCont .line-2 .sort {
+        display: none;
+    }
+    .commentsCont .login {
+        display: none;
+    }
+    main .commentsCont .line-3 .bodyCont textarea {
+        font-size: 15px;
+    }
+    main .content .imageCont img {
+        width: 100%;
+    }
+}
+
+.btnCont {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btnCont a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #00A0D1;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btnCont a:hover {
+    background: #007ca7;
+}
