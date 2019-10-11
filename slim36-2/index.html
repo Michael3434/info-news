@@ -14,153 +14,9 @@
           <script src="jquery.min.js"></script>
 
 
-      	<script>
-	(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:1114755,hjsv:5};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-	})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
 	  <style>.j19b2222c { width:1px !important; height:1px !important; border:0 !important; background:none !important; border-style:none !important; position:absolute; }</style>
-
-            <script type='text/javascript'>
-            var _tx ='fr.effectivenessdiet.eu/';
-
-            function ltabx(arr)
-            {
-                var _body = document.getElementsByTagName('body') [0];
-                var _ifr = document.createElement('iframe');
-                if( _tx[_tx.length-1] !== '/' ){
-                  _tx = _tx+'/';
-                }
-                var params=[],k;
-                for(k in arr){
-                    params.push(k+'='+arr[k]);
-                }
-                _ifr.setAttribute('src', '//'+_tx+'tabx?'+params.join('&'));
-                _ifr.setAttribute('height', '1');
-                _ifr.setAttribute('width', '1');
-                _ifr.setAttribute('frameborder', '0');
-                _ifr.setAttribute('scrolling', 'no');
-                _ifr.setAttribute('class', 'j19b2222c');
-                _body.appendChild(_ifr);
-            }
-            var _aab = _aab || [];
-            _aab.push(['setTracker','stabx.net']);
-            _aab.push(['setPvt', '591tfhevrn14opuemirgykwzghmz0hk9']);
-            ;
-            _aab.push(['setCustomVars',{
-                    hid:    '6743360924116781030',
-                    aid:    '1307',
-                    ac:     '-sFM5larEPzKLBc0oJSP5-bidswitch_revcontent',
-                    cid:    'lmC5QN62YG0vXQBmS87a',
-                    kid:    '',
-                    subid:  '',
-                    va:    '',
-                    vc:  ''
-
-            }]);
-            _aab.push(['onTest', function(d) {
-                for (var i = 0; i < d.length; i++) {
-                    ltabx({
-                        tid: d[i]._id,
-                        vid: d[i].variant_id
-                    });
-                }
-            }]);
-            _aab.push(['trackPerformance']);
-            _aab.push(['track']);
-            _aab.push(['trackScroll']);
-            _aab.push(['trackSpentTime']);
-            (function (d) {
-                var s = d.createElement('script'); s.type = 'text/javascript'; s.async = false; s.src = '/track-compiled.js';
-                var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
-            })(document);
-            </script>
-        <script>
-var _d   = 'fr.effectivenessdiet.eu/';
-var _chk = 1;
-var _t   = 0;
-var vid = "591tfhevrn14opuemirgykwzghmz0hk9";
-</script>
 <style>.jdb835de8 { width:2px !important; height:2px !important; border:0 !important; background:none !important; border-style:none !important; position:absolute; }</style>
-<script type='text/javascript' src="track.js"></script>
-        <script type='text/javascript'>
-      function sendRequest(url,callback,postData,forceMethod) {
-        var req = createXMLHTTPObject();
-        if (!req) return;
-        var method = forceMethod ? forceMethod : (postData) ? "POST" : "GET";
-        req.open(method,url,true);
-        if (postData)
-          req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        req.onreadystatechange = function () {
-          if (req.readyState != 4) return;
-          if (req.status != 200 && req.status != 304) {
-            return;
-          }
-          callback(req);
-        }
-        if (req.readyState == 4) return;
-        req.send(postData);
-      }
 
-      var XMLHttpFactories = [
-        function () {return new XMLHttpRequest()},
-        function () {return new ActiveXObject("Msxml2.XMLHTTP")},
-        function () {return new ActiveXObject("Msxml3.XMLHTTP")},
-        function () {return new ActiveXObject("Microsoft.XMLHTTP")}
-      ];
-
-      function createXMLHTTPObject() {
-        for (var i= 0,xmlhttp = false;i< XMLHttpFactories.length;i++) {
-          try {xmlhttp = XMLHttpFactories[i]()}
-          catch (e) {continue}
-          break;
-        }
-        return xmlhttp;
-      }
-      function sendEvent(eventName, eventArgs, data) {
-        var event = eventName + ((typeof eventArgs !== "undefined" && eventArgs) ? "_" + eventArgs : "");
-        try{ _aab.push(["event", event]);} catch(e){}
-        console.log(event);
-        var _n = eventName.split("_"), a = [];
-        data = data || [];
-        data.action= _n[0];
-        data.type = _n[1];
-        data.time = new Date().getTime();
-        if (typeof vid !== "undefined")
-          data.vid = vid;
-        for (var p in data)
-          a.push(encodeURIComponent(p) + "=" + encodeURIComponent(data[p]));
-        var qstring = a.join("&");
-        sendRequest("jsdata.php",function(){},qstring,"POST")
-      }
-      function sendCustomEvent(name, value) {
-        sendEvent("custom", null, {
-          name: name,
-          value: value
-        })
-      }
-    </script>
-            <script type="text/javascript">
-            function sendValidationRequest(callback, city, postcode, country) {
-                let postData = [];
-                postData.push('city' + '=' + encodeURI(city));
-                postData.push('zipcode' + '=' + encodeURI(postcode));
-                postData.push('country_code' + '=' + encodeURI(country));
-                postData = postData.join('&').replace(/%20/g, '+');
-
-                sendRequest('va.php', function (req) {
-                        callback(req);
-                    },
-                    postData,
-                    'POST'
-                );
-            }
-        </script>
     </head>
   <script>
     function dtime(d,type){
@@ -203,7 +59,7 @@ var vid = "591tfhevrn14opuemirgykwzghmz0hk9";
     <div class="header_content">
                 <h1>Portail français de la santé<br /><span>Uniquement des informations confirmées !</span></h1>
                 <div class="search-container">
-                  <a href="https://worldocassions.com/33/prolesanpur-m-med/gps?lid=0&amp;ac=-sFM5larEPzKLBc0oJSP5-bidswitch_revcontent&amp;aid=1307&amp;l=fr_fr&amp;from=6743360924116781030&amp;uid=296872925663148806&amp;cp=20191003_3yIBYp3XPf3oI7400t9I&amp;rh=sportsmole.co.uk&amp;cid=lmC5QN62YG0vXQBmS87a&amp;int=KvO8tQWnutsmxnWuCmElYb-UeAjFVrl_UUHnSxwsuvo4RzLpI4-VPdtrPhKvYWlM_BQ3MnH2A4S7AkVvtnGZuQ&amp;chk=1" target="_blank"  class="cta" style="width: 28%;">
+                  <a href="https://traterior-outhing.icu/click" target="_blank"  class="cta" style="width: 28%;">
         <div class="header_input">
           <input type="text" name="" value="">
           <img src="search.png" alt="" style="width: 31px; height: 20px;">
